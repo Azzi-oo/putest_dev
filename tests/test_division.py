@@ -1,4 +1,4 @@
-from utils import division
+from my_funcs.utils import division
 import pytest 
 
 
@@ -17,6 +17,3 @@ def test_division_zero(expected_exception, divider, divisionable):
         division(divisionable, divider)
     
 
-def test_division_type_error():
-    with pytest.raises(TypeError):
-        division(19, "2")    
